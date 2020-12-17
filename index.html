@@ -4,31 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="variables.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="responsive.css">
         <title> Youtube Clone </title>
     </head>
     <body>
         <header class="header">
-            <img class="menu-icon hide-sm" src="icons/menu.svg" alt="Toggle Sidebar">
+            <img class="icon menu-icon hide-sm" src="icons/menu.svg" alt="Toggle Sidebar">
             <a href="#">
                 <img src="icons/youtube-logo.svg" alt="YouTube Logo" class="youtube-logo">
             </a>
             <form class="search-bar">
-                <input type="search" class="search-input hide-sm" placeholder="Search" aria-label="Search">
+                <input type="search" class="search-input hide-xs" placeholder="Search" aria-label="Search">
                 <button type="submit" class="search-button">
-                    <img src="icons/search.svg">
+                    <img class="icon" src="icons/search.svg">
                 </button>
             </form>
             <div class="menu-icons">
+                <img class="icon menu-icon mode-toggle" src="icons/dark-mode.svg" alt="Toggle Dark Mode">
                 <a class="hide-sm" href="#">
-                    <img src="icons/video-call.svg" alt="Upload Video">
+                    <img class="icon" src="icons/video-call.svg" alt="Upload Video">
                 </a>
                 <a class="hide-sm" href="#">
-                    <img src="icons/apps.svg" alt="Apps">
+                    <img class="icon" src="icons/apps.svg" alt="Apps">
                 </a>
                 <a class="hide-sm" href="#">
-                    <img src="icons/notifications.svg" alt="Notifications">
+                    <img class="icon" src="icons/notifications.svg" alt="Notifications">
                 </a>
                 <a href="#">
                     <img class="menu-channel-icon" src="images/channel-thumbnail.png" alt="Your Channel">
@@ -39,15 +41,15 @@
             <nav class="sidebar-links">
                 <ul>
                     <li class="sidebar-link active">
-                        <img src="icons/home.svg" alt="Home">
+                        <img class="icon" src="icons/home.svg" alt="Home">
                         <span> Home </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/fire.svg" alt="Trending">
+                        <img class="icon" src="icons/fire.svg" alt="Trending">
                         <span> Trending </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/subscription.svg" alt="Subscriptions">
+                        <img class="icon" src="icons/subscription.svg" alt="Subscriptions">
                         <span> Subscriptions </span>
                     </li>
                 </ul>
@@ -55,27 +57,27 @@
             <nav class="sidebar-links">
                 <ul>
                     <li class="sidebar-link">
-                        <img src="icons/video-library.svg" alt="Library">
+                        <img class="icon" src="icons/video-library.svg" alt="Library">
                         <span> Library </span>
                     </li>
                     <li class="sidebar-link hide-lg hide-sm">
-                        <img src="icons/history.svg" alt="History">
+                        <img class="icon" src="icons/history.svg" alt="History">
                         <span> History </span>
                     </li>
                     <li class="sidebar-link hide-lg hide-sm">
-                        <img src="icons/slideshow.svg" alt="Your videos">
+                        <img class="icon" src="icons/slideshow.svg" alt="Your videos">
                         <span> Your videos </span>
                     </li>
                     <li class="sidebar-link hide-lg hide-sm">
-                        <img src="icons/watch-later.svg" alt="Watch later">
+                        <img class="icon" src="icons/watch-later.svg" alt="Watch later">
                         <span> Watch later </span>
                     </li>
                     <li class="sidebar-link hide-lg hide-sm">
-                        <img src="icons/thumb-up.svg" alt="Liked videos">
+                        <img class="icon" src="icons/thumb-up.svg" alt="Liked videos">
                         <span> Liked videos </span>
                     </li>
                     <li class="sidebar-link hide-lg hide-sm">
-                        <img src="icons/expand-more.svg" alt="Expand more">
+                        <img class="icon" src="icons/expand-more.svg" alt="Expand more">
                         <span> Expand more </span>
                     </li>
                 </ul>
@@ -84,11 +86,11 @@
                 <h3 class="sidebar-links-header"> Subscriptions </h3>
                 <ul>
                     <li class="sidebar-link">
-                        <img class="sidebar-link-channel" src="images/channel-thumbnail.png" alt="Some Channel">
+                        <img class="icon" class="sidebar-link-channel" src="images/channel-thumbnail.png" alt="Some Channel">
                         <span> Some Channel </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/add-circle.svg" alt="Searching Channels">
+                        <img class="icon" src="icons/add-circle.svg" alt="Searching Channels">
                         <span> Searching Channels </span>
                     </li>
                 </ul> 
@@ -97,23 +99,23 @@
                 <h3 class="sidebar-links-header"> More from Youtube </h3>
                 <ul>
                     <li class="sidebar-link">
-                        <img src="icons/shop.svg" alt="Youtube Premium">
+                        <img class="icon" src="icons/shop.svg" alt="Youtube Premium">
                         <span> Youtube Premium </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/movies.svg" alt="Movies">
+                        <img class="icon" src="icons/movies.svg" alt="Movies">
                         <span> Movies </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/games.svg" alt="Games">
+                        <img class="icon" src="icons/games.svg" alt="Games">
                         <span> Games </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/online.svg" alt="Live">
+                        <img class="icon" src="icons/online.svg" alt="Live">
                         <span> Live </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/lamp.svg" alt="Learn">
+                        <img class="icon" src="icons/lamp.svg" alt="Learn">
                         <span> Learn </span>
                     </li>
                 </ul> 
@@ -121,19 +123,19 @@
             <nav class="sidebar-links hide-lg hide-sm">
                 <ul>
                     <li class="sidebar-link">
-                        <img src="icons/settings.svg" alt="Settings">
+                        <img class="icon" src="icons/settings.svg" alt="Settings">
                         <span> Settings </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/flag.svg" alt="Report History">
+                        <img class="icon" src="icons/flag.svg" alt="Report History">
                         <span> Report History </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/help.svg" alt="Help">
+                        <img class="icon" src="icons/help.svg" alt="Help">
                         <span> Help </span>
                     </li>
                     <li class="sidebar-link">
-                        <img src="icons/feedback.svg" alt="Send feeback">
+                        <img class="icon" src="icons/feedback.svg" alt="Send feeback">
                         <span> Send feeback </span>
                     </li>
                 </ul> 
@@ -253,7 +255,7 @@
                     </article>
                 </section>
                 <section class="video-section">
-                    <header class="video-section-title hide-sm">
+                    <header class="video-section-title hide-xs">
                         <h2> 
                             Second Section 
                         </h2>
@@ -356,7 +358,7 @@
                     </article>
                 </section>
                 <section class="video-section">
-                    <header class="video-section-title hide-sm">
+                    <header class="video-section-title hide-xs">
                         <h2> 
                             Third Section 
                         </h2>
@@ -459,7 +461,7 @@
                     </article>
                 </section>
                 <section class="video-section">
-                    <header class="video-section-title hide-sm">
+                    <header class="video-section-title hide-xs">
                         <h2> 
                             Fourth Section 
                         </h2>
@@ -562,7 +564,7 @@
                     </article>
                 </section>
                 <section class="video-section">
-                    <header class="video-section-title hide-sm">
+                    <header class="video-section-title hide-xs">
                         <h2> 
                             Fifth Section 
                         </h2>
@@ -666,5 +668,6 @@
                 </section>
             </div>
         </main>
+        <script src="mode-toggle.js"></script>
     </body>
 </html>

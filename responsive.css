@@ -15,10 +15,6 @@
         overflow: auto;
     }
 
-    .hide-lg {
-        display: none;
-    }
-
     /* || sidebar */
 
     .sidebar-links {
@@ -52,6 +48,10 @@
     /* categories */
 
     .categories {
+        display: none;
+    }
+
+    .hide-lg {
         display: none;
     }
 }
@@ -88,9 +88,13 @@
     .video-metadata {
         font-size: .8rem;
     }
+
+    .hide-sm {
+        display: none !important;
+    }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 650px) {
 
     aside {
         position: fixed;
@@ -99,8 +103,8 @@
         z-index: 1;
         width: 100%;
         margin: 0;
-        border-top: 1px solid #f0f0f0;
-        background-color: white;
+        border-top: 1px solid var(--border-bottom-color);
+        background-color: var(--background-color);
     }
 
     main {
@@ -117,6 +121,75 @@
     .sidebar-links {
         display: inline-block;
     }
+
+    .sidebar-links:first-child {
+        width: 70%;
+    }
+
+    .sidebar-links:nth-child(2) {
+        width: 10%;
+    }
+
+    .sidebar-links > ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .sidebar-link {
+        padding: 0.5rem 0;
+    }
+
+    .sidebar-link img {
+        margin: 0.3rem 0.5rem;
+    }
+
+    /* || header */
+
+    .youtube-logo {
+        margin: 0;
+    }
+
+    .search-bar {
+        margin-left: 0.5rem auto;
+    }
+
+    .menu-icons {
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .menu-channel-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* || video, thumbnail etc. */
+
+    .video-section {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 1rem;
+    }
+
+    .thumbnail-image {
+        min-width: 250px;
+        min-height: 125px;
+    }
+
+    .channel-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .video-title {
+        font-size: .9rem;
+    }
+    
+    .video-channel-name,
+    .video-metadata {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
 
     .sidebar-links:first-child {
         width: 75%;
@@ -139,10 +212,6 @@
         margin: 0.3rem 0.5rem;
     }
 
-    .sidebar-link.active {
-        background-color: transparent;
-    }
-
     /* || header */
 
     .youtube-logo {
@@ -151,7 +220,8 @@
 
     .search-bar {
         margin: 0;
-        margin-left: 10rem;
+        margin-left: 9rem;
+        margin-right: 1rem;
     }
 
     .search-button {
@@ -161,7 +231,7 @@
     }
 
     .menu-icons {
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(2, auto);
     }
     
     .menu-channel-icon {
@@ -201,7 +271,7 @@
         font-size: .8rem;
     }
 
-    .hide-sm {
+    .hide-xs {
         display: none !important;
     }
 }
